@@ -2,7 +2,7 @@ import { FormContacto } from "../components/FormContacto";
 import { Flex ,Text} from "@radix-ui/themes";
 function Contacto() {
     return (
-        <Flex direction={"column"} gap={"4"}>
+        <Flex direction={"column"} gap={"4"} justify={"center"} style={{ margin:"auto"}}>
             <Text size={"6"}>Contacto</Text>
             <FormContacto />
         </Flex>

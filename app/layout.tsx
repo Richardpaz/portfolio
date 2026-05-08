@@ -1,10 +1,18 @@
 import Provider from "./Provider";
 import "@radix-ui/themes/styles.css";
+import {Roboto} from "next/font/google"
 import "../app/globals.css"
 export const viewport = {
   width: "device-width",
   initialScale: 1
 }
+const roboto = Roboto({
+  weight: ["300", "400", "500", "700"],
+  subsets: ["latin"],
+  display: "swap"
+})
+
+
 function Rootlayout({
   children
 }: {
@@ -12,7 +20,7 @@ function Rootlayout({
 }) {
   return (
     <html lang="es">
-      <body>
+      <body className={roboto.className}>
        <Provider>
         {children}
        </Provider>

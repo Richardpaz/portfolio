@@ -1,4 +1,4 @@
-import { Flex, Text } from "@radix-ui/themes";
+import { Badge, Flex, Text } from "@radix-ui/themes";
 import Image from "next/image";
 
 // data/stack.ts
@@ -59,18 +59,18 @@ export const toolsIcons = [
 
 function Habilidades() {
     return (
-        <Flex gap={"6"} direction={"column"}>
+        <Flex gap={"4"} direction={"column"} justify={"center"}>
             <Flex direction={"column"} gap={"4"}>
-                <Text>
-                    Frontend
+                <Text size={"4"}>
+                    Frontend                    
                 </Text>
                 <Flex gap={"4"} >
                     {stackLenguajes?.map((item) =>
                         <Flex direction={"column"} key={item} align={"center"} gap={"4"}>
                             <Image
                                 src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${item}/${item}-original.svg`}
-                                width={50}
-                                height={50}
+                                width={30}
+                                height={30}
                                 alt={item}
                             />
                             <Text>{item}</Text>
@@ -80,8 +80,8 @@ function Habilidades() {
                         <Flex direction={"column"} key={item} align={"center"} gap={"4"}>
                             <Image
                                 src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${item}/${item}-original.svg`}
-                                width={50}
-                                height={50}
+                                width={30}
+                                height={30}
                                 alt={item}
                             />
                             <Text>{item}</Text>
@@ -90,7 +90,7 @@ function Habilidades() {
                 </Flex>
             </Flex>
             <Flex direction={"column"} gap={"4"}>
-                <Text>
+                <Text size={"4"}>
                     Backend
                 </Text>
                 <Flex gap={"4"} >
@@ -98,8 +98,8 @@ function Habilidades() {
                         <Flex direction={"column"} key={item} align={"center"} gap={"4"}>
                             <Image
                                 src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${item}/${item}-original.svg`}
-                                width={50}
-                                height={50}
+                                width={30}
+                                height={30}
                                 alt={item}
                             />
                             <Text>{item}</Text>
@@ -108,7 +108,7 @@ function Habilidades() {
                 </Flex>
             </Flex>
             <Flex direction={"column"} gap={"4"} wrap={"wrap"}>
-                <Text>
+                <Text size={"4"}>
                     Herramientas
                 </Text>
                 <Flex gap={"4"} wrap={"wrap"}>
