@@ -107,7 +107,7 @@ export function FormContacto() {
           </AlertDialog.Description>
 
           <Flex gap="3" mt="4" justify="end">
-            <AlertDialog.Action asChild>
+            <AlertDialog.Action>
               <Button onClick={handleNav}>
                 OK
               </Button>
